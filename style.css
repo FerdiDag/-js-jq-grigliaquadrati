@@ -1,0 +1,25 @@
+.container {
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    height: 100vh;
+}
+
+.grid {
+    width: 300px;
+    height: 300px;
+}
+
+.quadrato {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    float: left;
+
+
+}
