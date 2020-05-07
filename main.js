@@ -1,7 +1,7 @@
 // //Creare in HTML una griglia di 5x5 quadrati vuoti.
 // Con jQuery, scrivere un numero random tra 0 e 10 dentro ognuno.
 // BONUS 1: generare la griglia con jQuery
-// BONUS 2: se il numero da inserire è pari scriverlo in rosso, se è dispari in nero, se è 0 in verde
+// BONUS 2: se il numero da inserire è pari scriverlo in rosso, se è dispari in nero,
 
 
 // genero 25 numeri random tra 0 e 10
@@ -31,11 +31,13 @@ $('.quadrato').each(function() {
     // se il numero da inserire è dispari, scriverlo in nero
     if (numero_generato % 2) {
         $(this).css('color', 'black');
-        // se il numero da inserire è pari, scriverlo in nero
-    } else if (numero_generato % 2 == 0){
+    } else if (numero_generato == 0) {
+        //se è 0 in verde
+        $(this).css('color', 'green');
+    } else {
+        // se il numero da inserire è pari, scriverlo in rosso
         $(this).css('color', 'red');
-        // se il numero da inserire è 0, scriverlo in verde
-    } 
+    }
 
     console.log($(this).append());
 });
