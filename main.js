@@ -28,5 +28,14 @@ $('.quadrato').each(function() {
     var numero_generato = generateRandom(0, 10);
     console.log(numero_generato);
     $(this).append(numero_generato);
+    // se il numero da inserire è dispari, scriverlo in nero
+    if (numero_generato % 2) {
+        $(this).css('color', 'black');
+        // se il numero da inserire è pari, scriverlo in nero
+    } else if (numero_generato % 2 == 0){
+        $(this).css('color', 'red');
+        // se il numero da inserire è 0, scriverlo in verde
+    } 
+
     console.log($(this).append());
 });
